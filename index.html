@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div id="body">
+<div id="input">
+    <input id="result" class="inputstyle" type="text" placeholder="0" readonly>
+</div>
+<div class="buttons">
+    <button id="button">(</button>
+<button >)</button>
+<button onclick=" removelasDigit()" ><i class="fa-solid fa-delete-left"></i></button>
+<button >/</button>
+<button onclick="displaycontent('7')"id="seven" >7</button>
+<button onclick="displaycontent('8')"id="Eight" >8</button>
+<button onclick="displaycontent('9')" id="Nine">9</button>
+<button onclick="displaycontent('*')"id="star" >*</button>
+<button onclick="displaycontent('4')" id="four" >4</button>
+<button onclick="displaycontent('5')"id="five">5</button>
+<button onclick="displaycontent('6')"id="six" >6</button>
+<button onclick="displaycontent('-')"id="sub" >-</button>
+<button onclick="displaycontent('1')"id="one" >1</button>
+<button onclick="displaycontent('2')"id="Two">2</button>
+<button onclick="displaycontent('3')"id="three" >3</button>
+<button onclick="displaycontent('+')"id="add" >+</button>
+<button onclick="displaycontent('0')" id="zero"> 0</button>
+<button onclick="displaycontent('.')" id="dot" >.</button>
+<button onclick="calcScreenClear()"id="ac" >AC</button>
+<button onclick="calcOutput()" >=</button>
+</div>
+
+
+ </div>   
+</body>
+<script src="./cal.js"></script>
+</html>
